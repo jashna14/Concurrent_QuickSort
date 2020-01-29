@@ -18,13 +18,13 @@ SOLUTION EXPLAINED:
 
 Performance Analysis:
 ===================
-N			NormalSort			ThreadedSort	        ConcurrentSort
-200     	0.000019      	  	0.004738            	0.006313
-2000     	0.000196			0.040387				0.070635
-8000		0.000885			0.118254				0.386283
-10000		0.001064			0.150484				0.501118
-50000		0.007547			0.900363				4.228456
-1000000		0.013843			Seg Fault				6.022700
+N|NormalSort|ThreadedSort|ConcurrentSort
+200|0.000019|0.004738|0.006313
+2000|0.000196|0.040387|0.070635
+8000|0.000885|0.118254|0.386283
+10000|0.001064|0.150484|0.501118
+50000|0.007547|0.900363|4.228456
+1000000|0.013843|Seg Fault|6.022700
 
 + The Worst Case Complexity is taken as array was sorted in decreasing order.
 + Randomized Quicksort with threading takes much more time due to creation of too many threads. The SegFault at large input therefore occurs due to the creation of too mamny threads (O(log(n)) number of threads).
