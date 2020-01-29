@@ -19,6 +19,7 @@ SOLUTION EXPLAINED:
 Performance Analysis:
 ===================
 N|NormalSort|ThreadedSort|ConcurrentSort
+|---|---|---|---
 200|0.000019|0.004738|0.006313
 2000|0.000196|0.040387|0.070635
 8000|0.000885|0.118254|0.386283
